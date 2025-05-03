@@ -6,6 +6,8 @@
     <title>WAY2VANDAR</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="./assets/images/logo-blue.svg" sizes="32x32" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -17,11 +19,11 @@
         </div>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="./form.html">About Us</a></li>
             <li><a href="#DESTINATION">Destination</a></li>
-            <li><a href="#">Packages</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#PACKAGES">Packages</a></li>
+            <li><a href="#GALLERY">Gallery</a></li>
+            <li><a href="#CONTACT">Contact Us</a></li>
           </ul>
           <a href="#" class="btn-nav">Book Now</a>
 
@@ -67,7 +69,7 @@
           </div>
       
           <div class="form-group">
-            <button class="form-btn" type="submit">INQUIRE NOW</button>
+            <button class="form-btn" id="form-btn" type="submit">INQUIRE NOW</button>
           </div>
 
          
@@ -134,8 +136,8 @@
 
       <!-- packages section starts here -->
 
-      <section class="packages">
-      <h2 class="title">CHECKOUT OUR PACKEGES</h2>
+      <section class="packages" >
+      <h2 class="title" id="PACKAGES">CHECKOUT OUR PACKEGES</h2>
       <p class="description">Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
 
       <div class="package-card">
@@ -213,7 +215,7 @@
 
       <!-- image gallery -->
 
-      <section class="photo-gallery">
+      <section class="photo-gallery" id="GALLERY">
         <div class="section-header">
           <h2 class="title">PHOTO GALLERY</h2>
           <p class="description">Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
@@ -222,12 +224,72 @@
         <div class="gallery-grid">
           <img src="./assets/images/gallery-1.jpg" alt="Traveler 1" class="gallery-item">
           <img src="./assets/images/gallery-2.jpg" alt="Traveler 2" class="gallery-item">
-          <img src="./assets/images/gallery-3.jpg" class="gallery-item">
+          <img src="./assets/images/gallery-3.jpg" alt="Traveler 3" class="gallery-item">
           <img src="./assets/images/gallery-4.jpg" alt="Traveler 4" class="gallery-item">
           <img src="./assets/images/gallery-5.jpg" alt="Traveler 5" class="gallery-item">
         </div>
       </section>
+
+      <!-- image gallery ends here -->
+
+      <section class="cta-section" id="CONTACT">
+        <div class="cta-content">
+          <div>
+            <h5>Call to Action</h5>
+            <h2>READY FOR UNFORGATABLE TRAVEL. <br> REMEMBER US!</h2>
+            <p>Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
+          </div>
+          <a href="#" class="cta-button">Contact Us !</a>
+        </div>
+
+      </section>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3><i class="fas fa-plane"></i> TOUR<b>LY</b></h3>
+            <p>Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia at perferendis, pretium, aenean aut ultrices.</p>
+          </div>
+          <div class="footer-column">
+            <h4>Contact Us</h4>
+            <p>Feel free to contact and reach us !!</p>
+            <p><i class="fas fa-phone"></i> +01 (123) 4567 90</p>
+            <p><i class="fas fa-envelope"></i> info.tourly.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 3146 Koontz, California</p>
+          </div>
+          <div class="footer-column">
+            <p>Subscribe our newsletter for more update & news !!</p>
+            <input type="email" placeholder="Enter Your Email" class="footer-input">
+            <button class="footer-button">Subscribe</button>
+          </div>
+        </div>
+      </footer>
+
+      <!-- footer bottom -->
+       <!-- Footer Bottom Section -->
+       <div class="footer-bottom">
+        <div class="footer-left">
+          <p>© 2022 codewithsadee. All rights reserved</p>
+        </div>
       
+        <div class="footer-center">
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term & Condition</a>
+            <a href="#">FAQ</a>
+          </div>
+        </div>
+      
+        <div class="footer-right">
+          <a href="#" class="scroll-top-btn">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+      
+
+      
+     
       
 </body>
 </html>
