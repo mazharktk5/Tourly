@@ -5,9 +5,27 @@
     font-family: 'Segoe UI', sans-serif;
   }
   
-  body {
-    background-color: #f4f4f4;
-  }
+  /* Default (Light mode) styles */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Toggle button styling */
+.mode-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: inherit;
+}
+
   
 
   html {

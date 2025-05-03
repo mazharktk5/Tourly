@@ -1,0 +1,37 @@
+<!-- booknow.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Now</title>
+  <link rel="stylesheet" href="booknow.css">
+</head>
+<body>
+  <div class="booking-container">
+    <h1>Book Your Adventure</h1>
+    <form id="booking-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="destination">Destination:</label>
+      <select id="destination" required>
+        <option value="">Select</option>
+        <option value="karachi">Karachi</option>
+        <option value="murree">Murree</option>
+        <option value="gilgit">Gilgit</option>
+        <!-- Add more -->
+      </select>
+
+      <label for="date">Travel Date:</label>
+      <input type="date" id="date" required>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+
+  <script src="booknow.js"></script>
+</body>
+</html>
