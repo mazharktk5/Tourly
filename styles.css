@@ -8,6 +8,7 @@
   /* Default (Light mode) styles */
 body {
   background-color: #ffffff;
+  
   color: #000000;
 }
 
@@ -16,6 +17,8 @@ body.dark-mode {
   background-color: #121212;
   color: #f0f0f0;
 }
+
+
 
 /* Toggle button styling */
 .mode-toggle {
@@ -34,7 +37,7 @@ body.dark-mode {
   /* Header Section */
   header {
     position: relative;
-    height: 80vh; /* reduced height */
+    height: 100vh; /* reduced height */
     overflow: hidden;
   }
   
@@ -161,7 +164,7 @@ body.dark-mode {
   /* form section */
 
   /* Search Section Styling */
-.search-section {
+/* .search-section {
     background-color: #2e72d2;
     padding: 40px 20px;
     display: flex;
@@ -218,7 +221,7 @@ body.dark-mode {
   .form-btn:hover {
     background-color: white;
     color: #2e72d2;
-  }
+  } */
   
 /* popular destinations */
 .popular-destinations-container {
@@ -339,10 +342,12 @@ body.dark-mode {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
+
   }
   
   .more-destinations-button:hover {
     background-color: #1955aa;
+    cursor: pointer;
   }
 
 
