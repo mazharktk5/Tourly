@@ -463,6 +463,21 @@ body.dark-mode {
     background-color: #ffffffcc;
   }
 
+  .package-card a button{
+    background: white;
+    color: #4a7fcf;
+    border: 2px solid white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+
+  .package-card a button:hover{
+    background-color: #ffffffcc
+  }
+
   /* photog gallery */
 
   .photo-gallery {
