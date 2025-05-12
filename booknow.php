@@ -1,12 +1,25 @@
-<html>
-    <?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $destination = $_POST['destination'];
-    $checkin = $_POST['checkin'];
-    $checkout = $_POST['checkout'];
-    $people = $_POST['people'];
+<?php
 
+$name = $_POST['name'];
+$email = $_POST['email'];
+$destination = $_POST['destination'];
+$checkin = $_POST['checkin'];
+$checkout = $_POST['checkout'];
+$people = $_POST['people'];
+
+
+$conn = new mysqli("localhost", "root", "", "tourly");
+
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+
+$sql = "INSERT INTO booking(name, email, destination, checkin, checkout, people)
+        VALUES ('$name', '$email', '$destination', '$checkin', '$checkout', $people)";
+
+if ($conn->query($sql) === TRUE){
     echo "<h1>Booking Confirmation</h1>";
     echo "<p>Thank you, $name, for booking your trip!</p>";
     echo "<p>Details:</p>";
@@ -19,29 +32,10 @@
     echo "</ul>";
     echo "<p>We will send a confirmation email to $email shortly.</p>";
     echo "<p>Thank you for choosing our service!</p>";
-    echo "<p><a href='index.html'>Back to Home</a></p>";
-    ?>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #555;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            background: #fff;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-</html>
+    echo "<p><a href='./index.html'>Back to Home</a></p>";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+?>

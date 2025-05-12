@@ -84,7 +84,7 @@ body {
   }
 
   .book-now-button {
-    background-color: #007BFF;
+    background-color:#28a745;
     color: white;
     padding: 10px 16px;
     border: none;
@@ -94,5 +94,5 @@ body {
   }
 
   .book-now-button:hover {
-    background-color: #0056b3;
+    background-color: #218838;
   }
