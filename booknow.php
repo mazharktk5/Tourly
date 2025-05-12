@@ -11,8 +11,11 @@ $people = $_POST['people'];
 $conn = new mysqli("localhost", "root", "", "tourly");
 
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+// if ($conn->connect_error) {
+//     die("Connection failed: " . $conn->connect_error);
+// }
+if($conn){
+    echo "Connection successful";
 }
 
 
@@ -34,8 +37,8 @@ if ($conn->query($sql) === TRUE){
     echo "<p>Thank you for choosing our service!</p>";
     echo "<p><a href='./index.html'>Back to Home</a></p>";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    die("Connection failed: " . mysqli_connect_error());
 }
 
-$conn->close();
+mysqli_close($conn);
 ?>
