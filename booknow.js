@@ -27,17 +27,17 @@
       errors.push("Destination is required.");
     }
 
-    // Date validation
+   
     if (checkin >= checkout) {
       errors.push("Check-out date must be after check-in date.");
     }
 
-    // People validation
+  
     if (isNaN(people) || people < 1) {
       errors.push("Number of people must be at least 1.");
     }
 
-    // Show alert if errors exist
+    
     if (errors.length > 0) {
       e.preventDefault(); 
       alert(errors.join('\n'));
