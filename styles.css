@@ -701,4 +701,57 @@ body.dark-mode {
   .scroll-top-btn:hover {
     background-color: #245da0;
   }
-  
+
+  /* Responsive for tablets */
+@media (max-width: 900px) {
+  .footer-content, .cta-content, .packages, .popular-destinations-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+  .package-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .package-card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .package-price {
+    width: 100%;
+    height: auto;
+    min-width: unset;
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    padding: 10px 10px;
+  }
+  .hero-content h1 {
+    font-size: 2em;
+  }
+  .section-title {
+    font-size: 1.5em;
+  }
+  .footer-content, .cta-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+  }
+  .footer-left, .footer-center, .footer-right {
+    margin: 0;
+    justify-content: center;
+  }
+  .popular-destinations-container, .photo-gallery, .packages {
+    padding: 20px 5px;
+  }
+}
