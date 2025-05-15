@@ -10,6 +10,7 @@ body {
   background-color: #ffffff;
   
   color: #000000;
+  overflow: hidden;
 }
 
 /* Dark mode styles */
@@ -33,6 +34,7 @@ body.dark-mode {
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   /* Header Section */
   header {

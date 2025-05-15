@@ -108,6 +108,18 @@ body {
   background-color: #1a47b8;
 }
 
+input.error {
+  border: 2px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  /* margin-top: 2px; */
+  display: block;
+}
+
+
 @media (max-width: 768px) {
   .booking-content {
     flex-direction: column;

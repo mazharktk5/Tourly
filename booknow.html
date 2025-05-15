@@ -5,43 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Book Your Trip</title>
   <link rel="stylesheet" href="booknow.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body>
   <div class="booking-page">
     
-    <div class="booking-header">
-      <h1>Plan Your Dream Trip</h1>
-      <p>Book your next adventure with us! Fill the form below to get started.</p>
+    <div class="booking-header" >
+      <h1 data-aos="fade-down" >Plan Your Dream Trip</h1>
+      <p data-aos="fade-up">Book your next adventure with us! Fill the form below to get started.</p>
     </div>
 
     <div class="booking-content">
-      <div class="booking-image">
-        <img src="./assets/images/hero-banner.jpg" alt="Travel Image">
-         <div class="booking-quote">"Travel is the only thing you buy that makes you richer."</div>
+      <div class="booking-image" >
+        <img src="./assets/images/hero-banner.jpg" alt="Travel Image" data-aos="fade-right">
+         <div class="booking-quote" data-aos="fade-up">"Travel is the only thing you buy that makes you richer."</div>
       </div>
 
-      <div class="form-container">
-        <form class="booking-form" action="http://localhost/tourly/test.php" method="POST">
+      <div class="form-container" data-aos="fade-left">
+        <form class="booking-form" action="http://localhost/tourly/test.php" method="POST" >
 
           <label for="name">Full Name</label>
           <input type="text" id="name" name="name"  placeholder="Your Name....">
+          <span class="error-message" id="name-error"></span>
 
           <label for="email">Email</label>
           <input type="email" id="email" name="email"  placeholder="youremail@example.com">
+          <span class="error-message" id="email-error"></span>
 
           <label for="destination">Destination</label>
           <input type="text" id="destination" name="destination"  placeholder="e.g. Maldives">
+          <span class="error-message" id="destination-error"></span>
 
-          
+          <label for="hotel">Select Hotel</label>
+<select id="hotel" name="hotel">
+  <option value="">Select a hotel</option>
+</select>
+<span class="error-message" id="hotel-error"></span>
+
 
           <label for="checkin">Check-in Date</label>
           <input type="date" id="checkin" name="checkin">
+          <span class="error-message" id="checkin-error"></span>
 
           <label for="checkout">Check-out Date</label>
           <input type="date" id="checkout" name="checkout" >
+          <span class="error-message" id="checkout-error"></span>
 
           <label for="people">Number of People</label>
           <input type="number" id="people" name="people"  value="1">
+          <span class="error-message" id="people-error"></span>
 
           <button type="submit">Book Now</button>
         </form>
