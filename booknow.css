@@ -136,6 +136,59 @@ input.error {
 }
 
 
+/* confirmation card */
+
+.confirmation-card {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.confirmation-card h1 {
+  text-align: center;
+  color: #0077cc;
+  margin-bottom: 20px;
+}
+
+.confirmation-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.confirmation-card ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.confirmation-card ul li:last-child {
+  border-bottom: none;
+}
+
+.confirmation-card p {
+  margin: 15px 0;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #005fa3;
+}
+
+
 
 @media (max-width: 768px) {
   .booking-content {
