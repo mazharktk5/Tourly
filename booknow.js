@@ -42,7 +42,7 @@ function validateField(id) {
     case 'checkout':
       const checkinDate = new Date(document.getElementById('checkin').value);
       const checkoutDate = new Date(document.getElementById('checkout').value);
-      if (!checkinDate || !checkoutDate || isNaN(checkinDate) || isNaN(checkoutDate)) return showError(id, "Both dates are required.");
+      // if (!checkinDate || !checkoutDate || isNaN(checkinDate) || isNaN(checkoutDate)) return showError(id, "Both dates are required.");
       if (checkinDate >= checkoutDate) return showError('checkout', "Check-out must be after check-in.");
       break;
     case 'people':
@@ -80,22 +80,90 @@ form.addEventListener('submit', function(e) {
 const params = new URLSearchParams(window.location.search);
 const destination = params.get('destination');
 
-// Mapping hotels by destination
 const hotelOptions = {
-  kyoto: ["Kyoto Royal Hotel", "Kyoto Garden Inn", "Gion Luxury Stay"],
-  burj: ["Armani Hotel Dubai", "Address Downtown", "Palace Downtown"],
-  sanmiguel: ["Hotel Matilda", "Rosewood San Miguel", "Casa Blanca Boutique"]
+  "Tokyo": ["Shinjuku Granbell Hotel", "Park Hyatt Tokyo", "Hotel Sunroute Plaza Shinjuku"],
+  "Paris": ["Le Meurice", "Hotel Plaza Athénée", "Hotel du Louvre"],
+  "Bali": ["The Legian Bali", "Ayana Resort", "Padma Resort Ubud"],
+  "New York": ["The Plaza", "The Standard High Line", "The Ritz-Carlton"],
+  "London": ["The Savoy", "The Ritz London", "The Langham"],
+  "Istanbul": ["Four Seasons Bosphorus", "Sirkeci Mansion", "Swissotel The Bosphorus"],
+  "Maldives": ["Soneva Fushi", "Baros Maldives", "The St. Regis Maldives"],
+  "Sydney": ["Park Hyatt Sydney", "Shangri-La Hotel", "The Fullerton Hotel"],
+  
+  // Existing destinations (optional)
+  "Kyoto Temple": ["Kyoto Royal Hotel", "Kyoto Garden Inn", "Gion Luxury Stay"],
+  "Burj Khalifa": ["Armani Hotel Dubai", "Address Downtown", "Palace Downtown"],
+  "San Miguel": ["Hotel Matilda", "Rosewood San Miguel", "Casa Blanca Boutique"]
 };
+
+const hotelDetails = {
+  "Tokyo": {
+    title: 'Top Hotels in Tokyo',
+    image: './assets/images/tokyo-hotel.jpg',
+    quote: 'Modern luxury and tradition blend perfectly in Tokyo’s best hotels.'
+  },
+  "Paris": {
+    title: 'Romantic Hotels in Paris',
+    image: './assets/images/paris-hotel.jpg',
+    quote: 'Stay in the heart of Paris and enjoy the city of love.'
+  },
+  "Bali": {
+    title: 'Resorts in Bali',
+    image: './assets/images/bali-hotel.jpg',
+    quote: 'Unwind in paradise with stunning beachfront and jungle resorts.'
+  },
+  "New York": {
+    title: 'Luxury Stays in NYC',
+    image: './assets/images/nyc-hotel.jpg',
+    quote: 'Experience the vibrant energy of New York from iconic hotels.'
+  },
+  "London": {
+    title: 'London’s Finest Hotels',
+    image: './assets/images/london-hotel.jpg',
+    quote: 'History meets elegance in the heart of London.'
+  },
+  "Istanbul": {
+    title: 'Stays in Istanbul',
+    image: './assets/images/istanbul-hotel.jpg',
+    quote: 'Bridge two continents with comfort and luxury in Istanbul.'
+  },
+  "Maldives": {
+    title: 'Overwater Villas in Maldives',
+    image: './assets/images/maldives-hotel.jpg',
+    quote: 'Relax in world-class resorts surrounded by turquoise waters.'
+  },
+  "Sydney": {
+    title: 'Best Hotels in Sydney',
+    image: './assets/images/sydney-hotel.jpg',
+    quote: 'Wake up to views of the Opera House and Sydney Harbour.'
+  },
+
+  
+  "Kyoto Temple": {
+    title: 'Top Kyoto Hotels',
+    image: './assets/images/gallery-2.jpg',
+    quote: 'Experience traditional Japanese hospitality in Kyoto’s finest stays.'
+  },
+  "Burj Khalifa": {
+    title: 'Burj Khalifa Hotels',
+    image: './assets/images/burj-hotel.jpg',
+    quote: 'Stay near the iconic Burj Khalifa and enjoy luxury like never before.'
+  },
+  "San Miguel": {
+    title: 'San Miguel Hotels',
+    image: './assets/images/sanmiguel-hotel.jpg',
+    quote: 'Discover charming hotels nestled in the heart of San Miguel.'
+  }
+};
+
 
 if (destination) {
   document.getElementById('destination').value = destination;
 
-  const destinationLower = destination.toLowerCase();
+  const hotels = hotelOptions[destination]; 
   const hotelSelect = document.getElementById('hotel');
-  const hotels = hotelOptions[destinationLower];
 
-  // Populate hotel options
-  if (hotels) {
+  if (hotels && hotelSelect) {
     hotels.forEach(hotel => {
       const option = document.createElement('option');
       option.value = hotel;
@@ -104,31 +172,11 @@ if (destination) {
     });
   }
 
-  // Optional header/banner customization (like before)
-  const hotelDetails = {
-    kyoto: {
-      title: 'Top Kyoto Hotels',
-      image: './assets/images/gallery-2.jpg',
-      quote: 'Experience traditional Japanese hospitality in Kyoto’s finest stays.'
-    },
-    burj: {
-      title: 'Burj Khalifa Hotels',
-      image: './assets/images/burj-hotel.jpg',
-      quote: 'Stay near the iconic Burj Khalifa and enjoy luxury like never before.'
-    },
-    sanmiguel: {
-      title: 'San Miguel Hotels',
-      image: './assets/images/sanmiguel-hotel.jpg',
-      quote: 'Discover charming hotels nestled in the heart of San Miguel.'
-    }
-  };
-
-  const content = hotelDetails[destinationLower];
+  const content = hotelDetails[destination]; 
   if (content) {
-    // document.querySelector('.booking-header h1').textContent = content.title;
     document.querySelector('.booking-image img').src = content.image;
     document.querySelector('.booking-quote').textContent = content.quote;
+  
+    // document.querySelector('.booking-header h1').textContent = content.title;
   }
 }
-
-
