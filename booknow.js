@@ -99,42 +99,42 @@ const hotelOptions = {
 const hotelDetails = {
   "Tokyo": {
     title: 'Top Hotels in Tokyo',
-    image: './assets/images/tokyo-hotel.jpg',
+    image: './assets/images/hotel1.jpeg',
     quote: 'Modern luxury and tradition blend perfectly in Tokyo’s best hotels.'
   },
   "Paris": {
     title: 'Romantic Hotels in Paris',
-    image: './assets/images/paris-hotel.jpg',
+    image: './assets/images/hotel2.jpeg',
     quote: 'Stay in the heart of Paris and enjoy the city of love.'
   },
   "Bali": {
     title: 'Resorts in Bali',
-    image: './assets/images/bali-hotel.jpg',
+    image: './assets/images/hotel3.jpeg',
     quote: 'Unwind in paradise with stunning beachfront and jungle resorts.'
   },
   "New York": {
     title: 'Luxury Stays in NYC',
-    image: './assets/images/nyc-hotel.jpg',
+    image: './assets/images/hotel4.jpeg',
     quote: 'Experience the vibrant energy of New York from iconic hotels.'
   },
   "London": {
     title: 'London’s Finest Hotels',
-    image: './assets/images/london-hotel.jpg',
+    image: './assets/images/hotel5.jpeg',
     quote: 'History meets elegance in the heart of London.'
   },
   "Istanbul": {
     title: 'Stays in Istanbul',
-    image: './assets/images/istanbul-hotel.jpg',
+    image: './assets/images/hotel6.jpeg',
     quote: 'Bridge two continents with comfort and luxury in Istanbul.'
   },
   "Maldives": {
     title: 'Overwater Villas in Maldives',
-    image: './assets/images/maldives-hotel.jpg',
+    image: './assets/images/hotel7.jpeg',
     quote: 'Relax in world-class resorts surrounded by turquoise waters.'
   },
   "Sydney": {
     title: 'Best Hotels in Sydney',
-    image: './assets/images/sydney-hotel.jpg',
+    image: './assets/images/hotel8.jpeg',
     quote: 'Wake up to views of the Opera House and Sydney Harbour.'
   },
 
@@ -146,12 +146,12 @@ const hotelDetails = {
   },
   "Burj Khalifa": {
     title: 'Burj Khalifa Hotels',
-    image: './assets/images/burj-hotel.jpg',
+    image: './assets/images/hotel9.jpeg',
     quote: 'Stay near the iconic Burj Khalifa and enjoy luxury like never before.'
   },
   "San Miguel": {
     title: 'San Miguel Hotels',
-    image: './assets/images/sanmiguel-hotel.jpg',
+    image: './assets/images/hotel12.jpeg',
     quote: 'Discover charming hotels nestled in the heart of San Miguel.'
   }
 };
