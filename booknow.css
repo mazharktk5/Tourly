@@ -119,6 +119,23 @@ input.error {
   display: block;
 }
 
+.booking-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fff;
+  /* appearance: none;  */
+}
+
+.booking-form select:focus {
+  border-color: #2d60d6;
+  outline: none;
+}
+
+
 
 @media (max-width: 768px) {
   .booking-content {

@@ -1,152 +1,103 @@
-/* General Styles */
+/* General Reset and Base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
-    margin-top: 40px;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Header Styles */
-header {
-    background-color: #4CAF50;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header nav a {
-    color: #fff;
-    padding: 0 15px;
-    font-size: 16px;
-}
-
-header nav a:hover {
-    background-color: #333;
-    padding: 0 15px;
+    color: #222;
+    line-height: 1.6;
+    padding: 20px;
 }
 
 /* Learn More Section */
 .learn-more-section {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .learn-more-section h1 {
-    text-align: center;
     font-size: 2.5rem;
+    color: #2e72d2;
     margin-bottom: 20px;
-    color: #333;
+    text-align: center;
 }
 
-.learn-more-section p {
-    font-size: 1.1rem;
-    line-height: 1.8;
+.learn-more-section h2 {
+    color: #28a745;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.learn-more-section p,
+.learn-more-section ul {
+    margin-bottom: 20px;
     color: #555;
 }
 
-/* Section Styling */
-h2 {
-    font-size: 1.8rem;
+.learn-more-section ul {
+    padding-left: 20px;
+}
+
+.learn-more-section ul li {
     margin-bottom: 10px;
-    color: #4CAF50;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 5px;
+    list-style-type: disc;
+}
+
+/* Contact and Social Media */
+.contact-us,
+.social-media {
     margin-top: 30px;
 }
 
-ul {
-    list-style: none;
-    margin: 10px 0;
-}
-
-ul li {
-    margin: 10px 0;
-    font-size: 1.1rem;
-    color: #555;
-}
-
-/* Contact & Social Media */
-.contact-us p, .social-media p {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-.contact-us a, .social-media a {
-    color: #4CAF50;
-    font-size: 1.1rem;
+/* Social Media Links */
+.social-media a {
+    display: inline-block;
+    margin-right: 15px;
     text-decoration: none;
+    color: #2e72d2;
+    transition: color 0.3s ease;
 }
 
-.contact-us a:hover, .social-media a:hover {
-    color: #333;
-    text-decoration: underline;
+.social-media a:hover {
+    color: #28a745;
 }
 
-.social-media i {
-    margin-right: 8px;
-}
-
-/* Footer Styles */
+/* Footer */
 .footer {
-    background-color: #333;
+    background-color: #2e72d2;
     color: #fff;
-    padding: 40px 0;
-    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .footer-column {
+    flex: 1;
     margin-bottom: 20px;
+    padding-right: 20px;
 }
 
-.footer h3 {
-    font-size: 2rem;
-}
-
-.footer p {
-    font-size: 1.1rem;
-    margin-top: 10px;
-}
-
-.footer-column a {
+.footer-column h3,
+.footer-column h4 {
+    margin-bottom: 10px;
     color: #fff;
-    font-size: 1.1rem;
-    text-decoration: none;
-    display: block;
-    margin: 5px 0;
 }
 
-.footer-column a:hover {
-    color: #4CAF50;
-}
-
-/* Media Queries for Responsiveness */
-@media screen and (max-width: 768px) {
-    .learn-more-section {
-        margin: 20px;
-        padding: 15px;
-    }
-
-    header nav a {
-        font-size: 14px;
-        padding: 0 10px;
-    }
-    
-    .footer {
-        padding: 20px;
-    }
+.footer-column p {
+    color: #eee;
 }

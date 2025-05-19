@@ -13,22 +13,6 @@ body {
   overflow: hidden;
 }
 
-/* Dark mode styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
-}
-
-
-
-/* Toggle button styling */
-.mode-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-  color: inherit;
-}
 
   
 
@@ -39,7 +23,7 @@ body.dark-mode {
   /* Header Section */
   header {
     position: relative;
-    height: 100vh; /* reduced height */
+    height: 100vh; 
     overflow: hidden;
   }
   
