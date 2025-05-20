@@ -89,8 +89,6 @@ const hotelOptions = {
   "Istanbul": ["Four Seasons Bosphorus", "Sirkeci Mansion", "Swissotel The Bosphorus"],
   "Maldives": ["Soneva Fushi", "Baros Maldives", "The St. Regis Maldives"],
   "Sydney": ["Park Hyatt Sydney", "Shangri-La Hotel", "The Fullerton Hotel"],
-  
-  // Existing destinations (optional)
   "Kyoto Temple": ["Kyoto Royal Hotel", "Kyoto Garden Inn", "Gion Luxury Stay"],
   "Burj Khalifa": ["Armani Hotel Dubai", "Address Downtown", "Palace Downtown"],
   "San Miguel": ["Hotel Matilda", "Rosewood San Miguel", "Casa Blanca Boutique"]
