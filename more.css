@@ -96,3 +96,11 @@ body {
   .book-now-button:hover {
     background-color: #218838;
   }
+
+
+  .destination-price {
+  font-size: 1.1rem;
+  color: green;
+  font-weight: bold;
+  margin: 5px 0;
+}

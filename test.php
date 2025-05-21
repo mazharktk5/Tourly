@@ -35,6 +35,8 @@ $result = mysqli_query($conn, $sql);
     echo "<li>Check-out Date: $checkout</li>";
     echo "<li>Number of People: $people</li>";
     echo "</ul>";
+    echo "Please send us a copy of your ID and a 50% deposit to confirm your booking.";
+    echo "";
     echo "<p>We will send a confirmation email to $email shortly.</p>";
     echo "<p>Thank you for choosing our service!</p>";
     echo "<p><a href='./'>Back to Home</a></p>";

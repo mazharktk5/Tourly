@@ -433,6 +433,15 @@ body {
   .package-price small {
     font-size: 13px;
   }
+  
+  .destination-price {
+  font-size: 1.1rem;
+  color: green;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+
 
   .book-btn {
     background: white;
